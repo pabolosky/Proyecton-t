@@ -1,0 +1,7 @@
+1. Mecánica de movimiento/exploración.
+2. Mecánica de ataque
+3. 5 - 10 min.
+4. 3 enemigos más jefe.
+5. Interfaz amigable.
+6. Animcaiones con animator.
+
