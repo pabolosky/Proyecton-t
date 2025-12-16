@@ -22,6 +22,10 @@ public class mover : MonoBehaviour
     public LayerMask enemyLayer;
     protected Rigidbody2D rb;
     protected Transform player;
+    /*************************/
+    Animator animator;
+
+
 
     //Se necesita dentro de los enemigos dos empty object que se llamen groundcheck y wallcheck mover su posicion a donde se quiera detectar suelo y pared
     // luego asignarles la etiqueta correspondiente
@@ -43,6 +47,7 @@ public class mover : MonoBehaviour
         //pa detectar bien el suelo y la pared
         groundCheck = GameObject.FindGameObjectWithTag("GroundCheck").transform;
         wallCheck = GameObject.FindGameObjectWithTag("WallCheck").transform;
+        animator = GetComponent<Animator>();
     }
 
     // Depende del enemigo hace un movimiento u otro
@@ -111,6 +116,8 @@ public class mover : MonoBehaviour
     protected void Move()
     {
         rb.velocity = new Vector2(direction * speed, rb.velocity.y);
+
+        animator.SetFloat("xVelocity",direction * speed);
     }
 
     //cambia la direccion del enemigo
