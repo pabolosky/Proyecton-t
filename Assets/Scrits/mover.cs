@@ -117,7 +117,7 @@ public class mover : MonoBehaviour
     {
         rb.velocity = new Vector2(direction * speed, rb.velocity.y);
 
-        animator.SetFloat("xVelocity",direction * speed);
+        animator.SetFloat("xVelocity",Mathf.Abs(direction * speed));
     }
 
     //cambia la direccion del enemigo
