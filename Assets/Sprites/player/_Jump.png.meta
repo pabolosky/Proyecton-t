@@ -1,9 +1,9 @@
 fileFormatVersion: 2
-guid: 3d6ecabf109c7aa45a89fdfe0699e956
+guid: 9628d92669343464a9c5562305aefe61
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 13
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -93,11 +93,37 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Jump2_0
+      name: _Jump_0
       rect:
         serializedVersion: 2
         x: 0
@@ -111,14 +137,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9e64fa4e494f57140ba342b8cab36fbb
-      internalID: -1011520523
+      spriteID: d54fe007495f5654599e8b8853455f14
+      internalID: -160739047
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jump2_1
+      name: _Jump_1
       rect:
         serializedVersion: 2
         x: 120
@@ -132,14 +158,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 43e8182346666ca4399134eceb8b674f
-      internalID: 1767729161
+      spriteID: 52a33646144b4da4ca5e6a50e2947f99
+      internalID: -826837326
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jump2_2
+      name: _Jump_2
       rect:
         serializedVersion: 2
         x: 240
@@ -153,8 +179,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 622a089f948f48340b96e2d71379cfb0
-      internalID: 264464510
+      spriteID: ae1147c3a1424ad4f9608f860c53f3a6
+      internalID: -1059118565
       vertices: []
       indices: 
       edges: []
@@ -170,9 +196,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Jump2_0: -1011520523
-      Jump2_1: 1767729161
-      Jump2_2: 264464510
+      _Jump_0: -160739047
+      _Jump_1: -826837326
+      _Jump_2: -1059118565
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

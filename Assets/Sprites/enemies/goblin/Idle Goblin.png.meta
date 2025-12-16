@@ -1,9 +1,9 @@
 fileFormatVersion: 2
-guid: 9628d92669343464a9c5562305aefe61
+guid: db56ac6e4d43e4d4b84d8db33ed5fc05
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 13
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -93,68 +93,115 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: _Jump_0
+      name: Idle Goblin_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 120
-        height: 80
+        width: 150
+        height: 150
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d54fe007495f5654599e8b8853455f14
-      internalID: -160739047
+      spriteID: 4777b9af64e41cf4f86c01f47dd78aad
+      internalID: -1973855130
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: _Jump_1
+      name: Idle Goblin_1
       rect:
         serializedVersion: 2
-        x: 120
+        x: 150
         y: 0
-        width: 120
-        height: 80
+        width: 150
+        height: 150
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 52a33646144b4da4ca5e6a50e2947f99
-      internalID: -826837326
+      spriteID: 159a512b966737646bfd93be25d3c803
+      internalID: -264806408
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: _Jump_2
+      name: Idle Goblin_2
       rect:
         serializedVersion: 2
-        x: 240
+        x: 300
         y: 0
-        width: 120
-        height: 80
+        width: 150
+        height: 150
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ae1147c3a1424ad4f9608f860c53f3a6
-      internalID: -1059118565
+      spriteID: 85a820e213b4d6145ae60f43cbb2a41d
+      internalID: 1791837420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle Goblin_3
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 0
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b4f6503f9889c64daac35806d1f985a
+      internalID: -2067720224
       vertices: []
       indices: 
       edges: []
@@ -170,9 +217,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      _Jump_0: -160739047
-      _Jump_1: -826837326
-      _Jump_2: -1059118565
+      Idle Goblin_0: -1973855130
+      Idle Goblin_1: -264806408
+      Idle Goblin_2: 1791837420
+      Idle Goblin_3: -2067720224
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

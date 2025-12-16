@@ -64,6 +64,7 @@
     <Compile Include="Assets\Scripts\playerMovement.cs" />
     <Compile Include="Assets\Scripts\damage.cs" />
     <Compile Include="Assets\Scripts\heal.cs" />
+    <Compile Include="Assets\Scripts\mover.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

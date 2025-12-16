@@ -1,9 +1,9 @@
 fileFormatVersion: 2
-guid: ed3c1e3df7af91146b6149df49eccf34
+guid: 87bb04c574f0fb84e90b39d25088a017
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 13
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -93,17 +93,43 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: _Attack_0
+      name: Walk_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 120
-        height: 80
+        width: 150
+        height: 150
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,20 +137,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6810ba01f70e19047a2684caadbdf0ca
-      internalID: -768883256
+      spriteID: e5b836027476a174b96c5944f25a8cf3
+      internalID: -1138430799
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: _Attack_1
+      name: Walk_1
       rect:
         serializedVersion: 2
-        x: 120
+        x: 150
         y: 0
-        width: 120
-        height: 80
+        width: 150
+        height: 150
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -132,20 +158,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 891d979187daf5449902628d05f71a5c
-      internalID: -94055595
+      spriteID: 857ddf262f2b1574ca3225c49c4f36f3
+      internalID: -673023713
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: _Attack_2
+      name: Walk_2
       rect:
         serializedVersion: 2
-        x: 240
+        x: 300
         y: 0
-        width: 120
-        height: 80
+        width: 150
+        height: 150
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,20 +179,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 428814728132e504e95ce70769b7808d
-      internalID: -1262113204
+      spriteID: 46df6c9bd6fb1964995015f2e12564b0
+      internalID: 904065554
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: _Attack_3
+      name: Walk_3
       rect:
         serializedVersion: 2
-        x: 360
+        x: 450
         y: 0
-        width: 120
-        height: 80
+        width: 150
+        height: 150
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,8 +200,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d43289ba60881454e8c57bf84825881b
-      internalID: 953981133
+      spriteID: 92e7d920336cba54aa83c0c74a1fe2e8
+      internalID: -1209405872
       vertices: []
       indices: 
       edges: []
@@ -191,10 +217,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      _Attack_0: -768883256
-      _Attack_1: -94055595
-      _Attack_2: -1262113204
-      _Attack_3: 953981133
+      Walk_0: -1138430799
+      Walk_1: -673023713
+      Walk_2: 904065554
+      Walk_3: -1209405872
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
