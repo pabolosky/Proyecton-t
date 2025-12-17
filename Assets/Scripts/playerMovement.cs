@@ -15,16 +15,21 @@ public class playerMovement : MonoBehaviour
     bool can2J = true;
     bool canMove = true;
 
-    public int maxHealth = 10;
+    public int maxHealth = 8;
     public int currentHealth;
+
+    public Transform atckPoint;
+    public float atckRange = 1;
+    public LayerMask enemyLayer;
 
     float timerA;
     float cdA = 0.5f;
     float timerR;
-    float cdR = 0.5f;
+    float cdR = 0.7f;
 
     Rigidbody2D rb;
     Animator animator;
+    public healthbar hp;
 
     void Start()
     {
@@ -137,6 +142,10 @@ public class playerMovement : MonoBehaviour
             {
                 rb.velocity = new Vector2(rb.velocity.x + (-dir * animator.GetFloat("xVelocity")), rb.velocity.y);
             }
+
+            Collider2D[] enemies = Physics2D.OverlapCircleAll(atckPoint.position, atckRange, enemyLayer);
+            if (enemies.Length > 0) enemies[0].GetComponent<enemyDamage>().changeHealthE(-1);
+
             timerA = cdA;
         }
     }
@@ -176,20 +185,23 @@ public class playerMovement : MonoBehaviour
 
     public void changeHealth(int amount)
     {
+      
         currentHealth += amount;
-
+        if (currentHealth > maxHealth) currentHealth = maxHealth;
+        hp.changeSpriteHealth();
+        
         if (currentHealth <= 0)
         {
             canMove = false;
             invencibility(true);
-            animator.SetBool("isDead", true);
+            animator.SetTrigger("isDead");
 
         }
-        if (amount < 0 && !animator.GetBool("isDead"))
+        else if (amount < 0)
         {
             hit();
         }
-        if (amount > 0 && !animator.GetBool("isDead"))
+        else if (amount > 0)
         {
             heal();
         }  
@@ -200,7 +212,7 @@ public class playerMovement : MonoBehaviour
 
     public void endDeath()
     {
-        animator.SetBool("isDead", false);
+       // Destroy(gameObject);
     }
 
     public void heal()

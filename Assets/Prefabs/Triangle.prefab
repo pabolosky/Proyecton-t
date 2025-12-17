@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5636769082221987284}
   - component: {fileID: 8729146594137414341}
   - component: {fileID: 1151379546874421270}
-  - component: {fileID: 2711544837544306922}
+  - component: {fileID: 8940544802677049505}
   m_Layer: 6
   m_Name: Triangle
   m_TagString: Untagged
@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 5562280313518425363}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.71, y: -2.33, z: 0}
+  m_LocalPosition: {x: 2.3231144, y: -13.812083, z: 0}
   m_LocalScale: {x: 0.5, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -159,7 +159,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.86795205}
   m_EdgeRadius: 0
---- !u!114 &2711544837544306922
+--- !u!114 &8940544802677049505
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -168,7 +168,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5562280313518425363}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bba72c57830ac434aa4d762c07f6b8fe, type: 3}
+  m_Script: {fileID: 11500000, guid: 66f9f39b102606a4696858a0a8f8d819, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dmg: -3
+  player: {fileID: 8361403111569436274, guid: 49001ca9b3332e146bd19ca6f6b891c1, type: 3}

@@ -75,7 +75,7 @@ GameObject:
   - component: {fileID: 1995331546734260205}
   - component: {fileID: 1056852599405191751}
   - component: {fileID: 7703583943222979824}
-  - component: {fileID: 3083372557376988293}
+  - component: {fileID: 3335350202160234126}
   m_Layer: 6
   m_Name: Skeleton
   m_TagString: Enemy
@@ -245,7 +245,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &3083372557376988293
+--- !u!114 &3335350202160234126
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
