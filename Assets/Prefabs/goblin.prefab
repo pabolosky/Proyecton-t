@@ -14,7 +14,8 @@ GameObject:
   - component: {fileID: 7873874558532112460}
   - component: {fileID: 4923734313031398645}
   - component: {fileID: 675213148034412304}
-  m_Layer: 0
+  - component: {fileID: 151960785095494459}
+  m_Layer: 6
   m_Name: goblin
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -197,6 +198,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyType: 1
   speed: 2
+  direction: 1
   playerDetectionRange: 5
   groundLayer:
     serializedVersion: 2
@@ -204,10 +206,29 @@ MonoBehaviour:
   enemyLayer:
     serializedVersion: 2
     m_Bits: 0
+  rb: {fileID: 0}
+  animator: {fileID: 4923734313031398645}
+  canMove: 1
   groundCheck: {fileID: 542230035518602200}
   groundCheckDistance: 0.3
   wallCheck: {fileID: 1208495228126717478}
   wallCheckDistance: 0.3
+--- !u!114 &151960785095494459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4352727316865911199}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bba72c57830ac434aa4d762c07f6b8fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyM: {fileID: 675213148034412304}
+  currentHealth: 0
+  maxHealth: 3
+  dmg: -1
 --- !u!1 &4361072597670194130
 GameObject:
   m_ObjectHideFlags: 0
@@ -217,7 +238,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1208495228126717478}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wallchek
   m_TagString: WallCheck
   m_Icon: {fileID: 0}
@@ -248,7 +269,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 542230035518602200}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GroundCheck
   m_TagString: GroundCheck
   m_Icon: {fileID: 0}

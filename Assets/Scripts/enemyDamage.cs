@@ -59,7 +59,7 @@ public class enemyDamage : MonoBehaviour
         
     }
 
-    public void endeDeath()
+    public void endDeath()
     {
         Destroy(gameObject);
     }

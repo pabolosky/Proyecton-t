@@ -212,7 +212,7 @@ public class playerMovement : MonoBehaviour
 
     public void endDeath()
     {
-       // Destroy(gameObject);
+       Destroy(gameObject);
     }
 
     public void heal()

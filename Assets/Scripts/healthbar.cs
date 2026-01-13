@@ -7,7 +7,6 @@ public class healthbar : MonoBehaviour
 {
     public Image hp;
     public Sprite[]sps;
-    SpriteRenderer sr;
     public playerMovement player;
     void Start()
     {

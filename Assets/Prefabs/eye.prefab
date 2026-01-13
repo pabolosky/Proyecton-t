@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6793590142865925808}
   - component: {fileID: 4805905821112053418}
   - component: {fileID: 5190622572760211437}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: eye
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 743199948913842053}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.81, y: 0.07, z: 0}
+  m_LocalPosition: {x: -6.94, y: -0.89, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -149,7 +149,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.095196486, y: -0.044798255}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -160,7 +160,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 2}
+  m_Size: {x: 1.7055726, y: 1.3504245}
   m_EdgeRadius: 0
 --- !u!95 &4805905821112053418
 Animator:
@@ -197,6 +197,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyType: 2
   speed: 2
+  direction: 1
   playerDetectionRange: 5
   groundLayer:
     serializedVersion: 2
@@ -204,6 +205,9 @@ MonoBehaviour:
   enemyLayer:
     serializedVersion: 2
     m_Bits: 0
+  rb: {fileID: 0}
+  animator: {fileID: 0}
+  canMove: 1
   groundCheck: {fileID: 8479266757443747670}
   groundCheckDistance: 0.3
   wallCheck: {fileID: 1055295535965655036}
@@ -217,7 +221,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8479266757443747670}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GroundCheck
   m_TagString: GroundCheck
   m_Icon: {fileID: 0}
@@ -248,7 +252,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1055295535965655036}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wallchek
   m_TagString: WallCheck
   m_Icon: {fileID: 0}
