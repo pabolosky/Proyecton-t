@@ -63,6 +63,7 @@
     <Compile Include="Assets\Scripts\healthbar.cs" />
     <Compile Include="Assets\Scripts\cameraFollow.cs" />
     <Compile Include="Assets\Scripts\playerMovement.cs" />
+    <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\heal.cs" />
     <Compile Include="Assets\Scripts\enemyDamage.cs" />
     <Compile Include="Assets\Scripts\enemyMove.cs" />

@@ -40,6 +40,13 @@ public class enemyMove : MonoBehaviour
     public float wallCheckDistance = 0.3f;
 
 
+
+    /*****************atack************************/
+    private bool canatack;
+    private Transform eneyatack;
+    public LayerMask playerlayer;
+    
+    
     // pilla el rb de los enemuigos y el transform del jugador
     void Start()
     {
@@ -78,7 +85,7 @@ public class enemyMove : MonoBehaviour
     void SkeletonBehaviour()
     {
         float distanceToPlayer = Vector2.Distance(transform.position, player.position);
-
+        damage();
         if (distanceToPlayer <= playerDetectionRange)
         {
             FacePlayer();
@@ -137,6 +144,7 @@ public class enemyMove : MonoBehaviour
         {
             rb.velocity = new Vector2(direction * speed, rb.velocity.y);
             animator.SetFloat("xVelocity", Mathf.Abs(direction * speed));
+            
         }
     }
 
@@ -181,6 +189,35 @@ public class enemyMove : MonoBehaviour
         if (hit.collider == null) return false;
 
         return hit.collider.CompareTag("Ground") || hit.collider.CompareTag("Enemy") || hit.collider.CompareTag("Wall");
+    }
+
+
+   
+
+    private void damage()
+    {
+        animator.SetBool("finishattack", false);
+
+        animator.SetTrigger("attack");
+        canMove = false;
+
+        if (animator.GetFloat("xVelocity") != 0)
+        {
+            rb.velocity=new Vector2(rb.velocity.x+(-direction*animator.GetFloat("xVelocity")), rb.velocity.y);
+        }
+
+
+        Collider2D[] player = Physics2D.OverlapCircleAll(eneyatack.position, 1f, playerlayer);
+        if (player.Length > 0) player[0].GetComponent<playerMovement>().changeHealth(-1);
+        
+    }
+
+
+
+    public void endAttack()
+    {
+        animator.SetBool("finishattack", true);
+        canMove = true;
     }
 
 }
