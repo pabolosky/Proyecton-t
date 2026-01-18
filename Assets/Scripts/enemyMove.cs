@@ -42,11 +42,14 @@ public class enemyMove : MonoBehaviour
 
 
     /*****************atack************************/
-    private bool canatack;
-    private Transform eneyatack;
+    private bool canDamage = false;
+    public Transform enemyatack;
     public LayerMask playerlayer;
-    
-    
+    public float attackRange = 1.2f;
+    public float attackCooldown = 1f;
+    private float attackTimer;
+
+
     // pilla el rb de los enemuigos y el transform del jugador
     void Start()
     {
@@ -85,11 +88,22 @@ public class enemyMove : MonoBehaviour
     void SkeletonBehaviour()
     {
         float distanceToPlayer = Vector2.Distance(transform.position, player.position);
-        damage();
+
+        if (attackTimer > 0)
+            attackTimer -= Time.deltaTime;
+
         if (distanceToPlayer <= playerDetectionRange)
         {
             FacePlayer();
-            Move();
+
+            if (PlayerInAttackRange())
+            {
+                TryAttack();
+            }
+            else
+            {
+                Move();
+            }
         }
         else
         {
@@ -111,15 +125,28 @@ public class enemyMove : MonoBehaviour
         }
     }
 
-    //mecanica del slime
     void SlimeBehaviour()
     {
-        Move();
+        float distanceToPlayer = Vector2.Distance(transform.position, player.position);
 
-        if (!IsGroundAhead() || IsWallAhead())
+        if (attackTimer > 0)
+            attackTimer -= Time.deltaTime;
+
+        if (distanceToPlayer <= attackRange)
         {
-            direction *= -1;
-            transform.localScale = new Vector3(direction, 0.7f, 0.7f);
+            TryAttack();
+            return;
+        }
+
+        if (canMove)
+        {
+            Move();
+
+            if (!IsGroundAhead() || IsWallAhead())
+            {
+                direction *= -1;
+                transform.localScale = new Vector3(direction, 0.7f, 0.7f);
+            }
         }
     }
 
@@ -148,24 +175,6 @@ public class enemyMove : MonoBehaviour
         }
     }
 
-    ////cambia la direccion del enemigo
-    //protected void Flip()
-    //{
-    //    direction *= -1;
-    //    transform.localScale = new Vector3(direction, 0.7f, 0.7f);
-    //}
-
-    //comprueba si el enemigo debe girar para mirar al jugador
-    //solo lo usa el esqueleto para que mire al jugador
-    //protected void CheckFlip()
-    //{
-    //    if (direction > 0 && rb.velocity.x < 0 ||
-    //        direction < 0 && rb.velocity.x > 0)
-    //    {
-    //        Flip();
-    //    }
-    //}
-    //detecta el suelo
     protected bool IsGroundAhead()
     {
         RaycastHit2D hit = Physics2D.Raycast(
@@ -192,34 +201,62 @@ public class enemyMove : MonoBehaviour
     }
 
 
-   
 
-    private void damage()
+    //cosas para atacar
+    bool PlayerInAttackRange()
     {
-        animator.SetBool("finishattack", false);
+        return Vector2.Distance(transform.position, player.position) <= attackRange;
+    }
+
+    void TryAttack()
+    {
+        if (attackTimer > 0) return;
 
         animator.SetTrigger("attack");
         canMove = false;
+        rb.velocity = Vector2.zero;
 
-        if (animator.GetFloat("xVelocity") != 0)
-        {
-            rb.velocity=new Vector2(rb.velocity.x+(-direction*animator.GetFloat("xVelocity")), rb.velocity.y);
-        }
-
-
-        Collider2D[] player = Physics2D.OverlapCircleAll(eneyatack.position, 1f, playerlayer);
-        if (player.Length > 0) player[0].GetComponent<playerMovement>().changeHealth(-1);
-        
+        attackTimer = attackCooldown;
     }
 
+
+    public void StartAttack()
+    {
+        canMove = false;
+        rb.velocity = Vector2.zero;
+        canDamage = false;
+    }
+
+
+    public void EnableDamage()
+    {
+        if (canDamage) return; // evita doble golpe
+
+        canDamage = true;
+
+        Collider2D[] hitPlayer = Physics2D.OverlapCircleAll(
+            enemyatack.position,
+            attackRange,
+            playerlayer
+        );
+
+        if (hitPlayer.Length > 0)
+        {
+            hitPlayer[0]
+                .GetComponent<playerMovement>()
+                .changeHealth(-1);
+        }
+    }
 
 
     public void endAttack()
     {
-        animator.SetBool("finishattack", true);
+        canDamage = false;
         canMove = true;
     }
 
+
+  
 }
 
 
