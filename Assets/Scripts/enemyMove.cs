@@ -153,13 +153,26 @@ public class enemyMove : MonoBehaviour
     //mecanica del ojo
     void EyeBehaviour()
     {
-        rb.gravityScale = 0f;
-        rb.velocity = new Vector2(direction * speed, 0);
+        float distanceToPlayer = Vector2.Distance(transform.position, player.position);
 
-        if (!IsGroundAhead() || IsWallAhead())
+        if (attackTimer > 0)
+            attackTimer -= Time.deltaTime;
+
+        if (distanceToPlayer <= attackRange)
         {
-            direction *= -1;
-            transform.localScale = new Vector3(direction, 1, 1);
+            TryAttack();
+            return;
+        }
+
+        if (canMove)
+        {
+            Move();
+
+            if (!IsGroundAhead() || IsWallAhead())
+            {
+                direction *= -1;
+                transform.localScale = new Vector3(direction, 1f, 1f);
+            }
         }
     }
 
