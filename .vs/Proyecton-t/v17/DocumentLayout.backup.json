@@ -1,25 +1,25 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Juampe\\Desktop\\unityTs\\Proyecton-t\\",
+  "WorkspaceRootPath": "D:\\2_DAM_T\\unity_typeshi\\Proyecton-t\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CC859808-5E62-E235-9D57-B7A470CD35DF}|Assembly-CSharp.csproj|c:\\users\\juampe\\desktop\\unityts\\proyecton-t\\assets\\scripts\\enemymove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CC859808-5E62-E235-9D57-B7A470CD35DF}|Assembly-CSharp.csproj|d:\\2_dam_t\\unity_typeshi\\proyecton-t\\assets\\scripts\\enemymove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CC859808-5E62-E235-9D57-B7A470CD35DF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemymove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC859808-5E62-E235-9D57-B7A470CD35DF}|Assembly-CSharp.csproj|C:\\Users\\Juampe\\Desktop\\unityTs\\Proyecton-t\\assets\\scripts\\enemydamage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CC859808-5E62-E235-9D57-B7A470CD35DF}|Assembly-CSharp.csproj|D:\\2_DAM_T\\unity_typeshi\\Proyecton-t\\assets\\scripts\\enemydamage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CC859808-5E62-E235-9D57-B7A470CD35DF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemydamage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC859808-5E62-E235-9D57-B7A470CD35DF}|Assembly-CSharp.csproj|C:\\Users\\Juampe\\Desktop\\unityTs\\Proyecton-t\\assets\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CC859808-5E62-E235-9D57-B7A470CD35DF}|Assembly-CSharp.csproj|D:\\2_DAM_T\\unity_typeshi\\Proyecton-t\\assets\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CC859808-5E62-E235-9D57-B7A470CD35DF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC859808-5E62-E235-9D57-B7A470CD35DF}|Assembly-CSharp.csproj|C:\\Users\\Juampe\\Desktop\\unityTs\\Proyecton-t\\assets\\scripts\\healthbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CC859808-5E62-E235-9D57-B7A470CD35DF}|Assembly-CSharp.csproj|D:\\2_DAM_T\\unity_typeshi\\Proyecton-t\\assets\\scripts\\healthbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CC859808-5E62-E235-9D57-B7A470CD35DF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\healthbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC859808-5E62-E235-9D57-B7A470CD35DF}|Assembly-CSharp.csproj|C:\\Users\\Juampe\\Desktop\\unityTs\\Proyecton-t\\assets\\scripts\\objectdamage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CC859808-5E62-E235-9D57-B7A470CD35DF}|Assembly-CSharp.csproj|D:\\2_DAM_T\\unity_typeshi\\Proyecton-t\\assets\\scripts\\objectdamage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CC859808-5E62-E235-9D57-B7A470CD35DF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\objectdamage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -36,9 +36,9 @@
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "objectDamage.cs",
-              "DocumentMoniker": "C:\\Users\\Juampe\\Desktop\\unityTs\\Proyecton-t\\Assets\\Scripts\\objectDamage.cs",
+              "DocumentMoniker": "D:\\2_DAM_T\\unity_typeshi\\Proyecton-t\\Assets\\Scripts\\objectDamage.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\objectDamage.cs",
-              "ToolTip": "C:\\Users\\Juampe\\Desktop\\unityTs\\Proyecton-t\\Assets\\Scripts\\objectDamage.cs",
+              "ToolTip": "D:\\2_DAM_T\\unity_typeshi\\Proyecton-t\\Assets\\Scripts\\objectDamage.cs",
               "RelativeToolTip": "Assets\\Scripts\\objectDamage.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -48,24 +48,23 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "enemyDamage.cs",
-              "DocumentMoniker": "C:\\Users\\Juampe\\Desktop\\unityTs\\Proyecton-t\\Assets\\Scripts\\enemyDamage.cs",
+              "DocumentMoniker": "D:\\2_DAM_T\\unity_typeshi\\Proyecton-t\\Assets\\Scripts\\enemyDamage.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\enemyDamage.cs",
-              "ToolTip": "C:\\Users\\Juampe\\Desktop\\unityTs\\Proyecton-t\\Assets\\Scripts\\enemyDamage.cs",
+              "ToolTip": "D:\\2_DAM_T\\unity_typeshi\\Proyecton-t\\Assets\\Scripts\\enemyDamage.cs",
               "RelativeToolTip": "Assets\\Scripts\\enemyDamage.cs",
               "ViewState": "AgIAAB4AAAAAAAAAAAAowCkAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-17T19:21:52.472Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-17T19:21:52.472Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "enemyMove.cs",
-              "DocumentMoniker": "C:\\Users\\Juampe\\Desktop\\unityTs\\Proyecton-t\\Assets\\Scripts\\enemyMove.cs",
+              "DocumentMoniker": "D:\\2_DAM_T\\unity_typeshi\\Proyecton-t\\Assets\\Scripts\\enemyMove.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\enemyMove.cs",
-              "ToolTip": "C:\\Users\\Juampe\\Desktop\\unityTs\\Proyecton-t\\Assets\\Scripts\\enemyMove.cs",
+              "ToolTip": "D:\\2_DAM_T\\unity_typeshi\\Proyecton-t\\Assets\\Scripts\\enemyMove.cs",
               "RelativeToolTip": "Assets\\Scripts\\enemyMove.cs",
-              "ViewState": "AgIAAGgAAAAAAAAAAAAgwHEAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAI8AAAAAAAAAAAAUwK8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-17T17:53:19.984Z",
               "EditorCaption": ""
@@ -74,9 +73,9 @@
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "healthbar.cs",
-              "DocumentMoniker": "C:\\Users\\Juampe\\Desktop\\unityTs\\Proyecton-t\\Assets\\Scripts\\healthbar.cs",
+              "DocumentMoniker": "D:\\2_DAM_T\\unity_typeshi\\Proyecton-t\\Assets\\Scripts\\healthbar.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\healthbar.cs",
-              "ToolTip": "C:\\Users\\Juampe\\Desktop\\unityTs\\Proyecton-t\\Assets\\Scripts\\healthbar.cs",
+              "ToolTip": "D:\\2_DAM_T\\unity_typeshi\\Proyecton-t\\Assets\\Scripts\\healthbar.cs",
               "RelativeToolTip": "Assets\\Scripts\\healthbar.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -86,9 +85,9 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "playerMovement.cs",
-              "DocumentMoniker": "C:\\Users\\Juampe\\Desktop\\unityTs\\Proyecton-t\\Assets\\Scripts\\playerMovement.cs",
+              "DocumentMoniker": "D:\\2_DAM_T\\unity_typeshi\\Proyecton-t\\Assets\\Scripts\\playerMovement.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\playerMovement.cs",
-              "ToolTip": "C:\\Users\\Juampe\\Desktop\\unityTs\\Proyecton-t\\Assets\\Scripts\\playerMovement.cs",
+              "ToolTip": "D:\\2_DAM_T\\unity_typeshi\\Proyecton-t\\Assets\\Scripts\\playerMovement.cs",
               "RelativeToolTip": "Assets\\Scripts\\playerMovement.cs",
               "ViewState": "AgIAALEAAAAAAAAAAAAuwPEAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

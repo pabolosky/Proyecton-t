@@ -31,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 4352727316865911199}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -16.98477, y: -2.0735443, z: 0}
+  m_LocalPosition: {x: -17.313461, y: -1.6460128, z: 0}
   m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -104,7 +104,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 30
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -128,7 +128,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 4352727316865911199}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: 1533b92d1f195e240825e38fbe755955, type: 2}
+  m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -232,7 +232,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bba72c57830ac434aa4d762c07f6b8fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyM: {fileID: 0}
+  enemyM: {fileID: 675213148034412304}
   currentHealth: 0
   maxHealth: 3
   dmg: -1
@@ -323,7 +323,7 @@ Transform:
   m_GameObject: {fileID: 8430816941262814885}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.38, y: -0.39, z: 0}
+  m_LocalPosition: {x: 2.35, y: -0.39, z: 0}
   m_LocalScale: {x: 2.473642, y: 3.6221187, z: 1.7668872}
   m_ConstrainProportionsScale: 0
   m_Children: []

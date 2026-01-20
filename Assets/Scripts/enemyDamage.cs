@@ -39,8 +39,8 @@ public class enemyDamage : MonoBehaviour
         enemyM.canMove = false;
         enemyM.rb.velocity = Vector2.zero;
 
-        float knockbackForceX = 2f;
-        float knockbackForceY = 2f;
+        float knockbackForceX = 20f;
+        float knockbackForceY = 4f;
 
         enemyM.rb.AddForce(
             new Vector2(-enemyM.direction * knockbackForceX, knockbackForceY),

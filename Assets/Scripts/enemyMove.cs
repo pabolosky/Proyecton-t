@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using UnityEngine;
 
 public class enemyMove : MonoBehaviour
@@ -46,7 +48,7 @@ public class enemyMove : MonoBehaviour
     public Transform enemyatack;
     public LayerMask playerlayer;
     public float attackRange = 1.2f;
-    public float attackCooldown = 1f;
+    public float attackCooldown = 0.5f;
     private float attackTimer;
 
 
@@ -161,7 +163,10 @@ public class enemyMove : MonoBehaviour
         if (distanceToPlayer <= attackRange)
         {
             TryAttack();
+
+            UnityEngine.Debug.Log("hit");
             return;
+
         }
 
         if (canMove)
@@ -228,7 +233,7 @@ public class enemyMove : MonoBehaviour
         animator.SetTrigger("attack");
         canMove = false;
         rb.velocity = Vector2.zero;
-
+        
         attackTimer = attackCooldown;
     }
 

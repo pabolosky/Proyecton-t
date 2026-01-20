@@ -14,7 +14,8 @@ GameObject:
   - component: {fileID: 6793590142865925808}
   - component: {fileID: 4805905821112053418}
   - component: {fileID: 5190622572760211437}
-  m_Layer: 0
+  - component: {fileID: 5487500725075104080}
+  m_Layer: 6
   m_Name: eye
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -30,12 +31,13 @@ Transform:
   m_GameObject: {fileID: 743199948913842053}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.81, y: 0.07, z: 0}
+  m_LocalPosition: {x: -17.41, y: -1.85, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1055295535965655036}
   - {fileID: 8479266757443747670}
+  - {fileID: 2763872643741723724}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &5288519780518665006
@@ -102,7 +104,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 30
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -126,7 +128,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 743199948913842053}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: 1533b92d1f195e240825e38fbe755955, type: 2}
+  m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -197,6 +199,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyType: 2
   speed: 2
+  direction: 1
   playerDetectionRange: 5
   groundLayer:
     serializedVersion: 2
@@ -204,10 +207,66 @@ MonoBehaviour:
   enemyLayer:
     serializedVersion: 2
     m_Bits: 0
+  rb: {fileID: 0}
+  animator: {fileID: 0}
+  canMove: 1
   groundCheck: {fileID: 8479266757443747670}
   groundCheckDistance: 0.3
   wallCheck: {fileID: 1055295535965655036}
   wallCheckDistance: 0.3
+  enemyatack: {fileID: 2763872643741723724}
+  playerlayer:
+    serializedVersion: 2
+    m_Bits: 8
+  attackRange: 1.2
+  attackCooldown: 1
+--- !u!114 &5487500725075104080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 743199948913842053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bba72c57830ac434aa4d762c07f6b8fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyM: {fileID: 5190622572760211437}
+  currentHealth: 0
+  maxHealth: 3
+  dmg: -1
+--- !u!1 &1374885692943501482
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2763872643741723724}
+  m_Layer: 6
+  m_Name: enemyTrack
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2763872643741723724
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1374885692943501482}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.55, y: -0.29, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9196427676573692917}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2402361261584229223
 GameObject:
   m_ObjectHideFlags: 0
@@ -217,7 +276,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8479266757443747670}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GroundCheck
   m_TagString: GroundCheck
   m_Icon: {fileID: 0}
@@ -233,7 +292,7 @@ Transform:
   m_GameObject: {fileID: 2402361261584229223}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.25, y: -2.8, z: 0}
+  m_LocalPosition: {x: 0.25, y: -1.35, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -248,7 +307,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1055295535965655036}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wallchek
   m_TagString: WallCheck
   m_Icon: {fileID: 0}
