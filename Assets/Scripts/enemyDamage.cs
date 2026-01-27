@@ -36,6 +36,7 @@ public class enemyDamage : MonoBehaviour
     public void hit()
     {
         enemyM.animator.SetTrigger("isHit");
+        enemyM.animator.SetBool("hit", true);
         enemyM.canMove = false;
         enemyM.rb.velocity = Vector2.zero;
 
@@ -55,7 +56,7 @@ public class enemyDamage : MonoBehaviour
     {
         yield return new WaitForSeconds(time);
         enemyM.animator.SetBool("hit", false);
-        enemyM. canMove = true;
+        enemyM.canMove = true;
         
     }
 
